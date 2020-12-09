@@ -1,0 +1,12 @@
+hash -d cac=/home/harshil/.cache 
+hash -d cf=/home/harshil/.config 
+hash -d D=/home/harshil/Downloads 
+hash -d d=/home/harshil/Documents 
+hash -d dt=/home/harshil/.local/share 
+hash -d h=/home/harshil 
+hash -d m=/home/harshil/Music 
+hash -d mn=/mnt 
+hash -d pp=/home/harshil/Pictures 
+hash -d sc=/home/harshil/.local/bin 
+hash -d src=/home/harshil/.local/src 
+hash -d vv=/home/harshil/Videos 
