@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# One of the following: xrandr, light, kernel
+METHOD="light"
+icon="🔆"
+
+case $BLOCK_BUTTON in
+	4) light -A 2 ;;
+	5) light -U 2 ;;
+	3) notify-send "🔆 Brightness module" "\- Shows brightness.
+- Scroll to change." ;;
+	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+URGENT_VALUE=10
+
+if [[ "${METHOD}" = "xrandr" ]]; then
+  device="${BLOCK_INSTANCE:-primary}"
+  xrandrOutput=$(xrandr --verbose)
+
+  if [[ "${device}" = "primary" ]]; then
+    device=$(echo "${xrandrOutput}" | grep 'primary' | head -n 1 | awk -F ' ' '{print $1}')
+  fi
+
+  curBrightness=$(echo "${xrandrOutput}" | grep "${device}" -A 5 | grep -i "Brightness" | awk -F ':' '{print $2}')
+elif [[ "${METHOD}" = "kernel" ]]; then
+  device="${BLOCK_INSTANCE:-backlight}"
+  maxBrightness=$(cat /sys/class/backlight/amdgpu_bl0/max_brightness)
+  curBrightness=$(cat /sys/class/backlight/amdgpu_bl0/brightness)
+elif [[ "${METHOD}" = "light" ]]; then
+  curBrightness=$(light -G)
+fi
+
+if [[ "${curBrightness}" -le 0 ]]; then
+  exit
+fi
+
+if [[ "${METHOD}" = "xrandr" ]]; then
+  percent=$(echo "scale=0;${curBrightness} * 100" | bc -l)
+elif [[ "${METHOD}" = "kernel" ]]; then
+  percent=$(echo "scale=0;${curBrightness} * 100 / ${maxBrightness}" | bc -l)
+elif [[ "${METHOD}" = "light" ]]; then
+    percent=$(echo "scale=0;${curBrightness}" | bc -l)
+fi
+
+percent=${percent%.*}
+
+if [[ "${percent}" -le 0 ]]; then
+  exit
+fi
+
+echo "${icon}${percent}% "
+#echo "${percent}% "
+echo " "
+
+if [[ "${percent}" -le "${URGENT_VALUE}" ]]; then
+  exit 33
+fi
+

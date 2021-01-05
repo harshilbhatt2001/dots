@@ -16,7 +16,7 @@ esac
 
 case "$location" in
 	"/home"* ) icon="🏠" ;;
-	"/mnt"* ) icon="💾" ;;
+	"/run/media/harshil "* ) icon="💾" ;;
 	*) icon="🖥";;
 esac
 

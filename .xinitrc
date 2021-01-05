@@ -17,8 +17,11 @@
 
 # Comment/uncomment these lines depending on what wm you want to use. Also
 # check the i3blocks line above.
-feh --bg-scale ~/Pictures/Wallpapers/spiderverse1.jpg &
+#feh --bg-scale ~/Pictures/Wallpapers/spiderverse1.jpg &
 dwmblocks &
 redshift &
+#locker &
+udiskie -2 -s &
+thunar --daemon &
 ssh-agent dwm
 # ssh-agent i3

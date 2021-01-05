@@ -9,6 +9,7 @@ alias \
 	mv="mv -iv" \
 	rm="rm -vI" \
 	cls="clear" \
+    fm="thunar" \
 	mkd="mkdir -pv" \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
@@ -35,11 +36,15 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura"
+    tms="teams-for-linux" \
+    matlab="matlab -nosplash -desktop" \
+	z="zathura" \
+    spotify="LD_PRELOAD=/lib/spotify-adblock.so spotify"
 
 alias \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
-    zshconfig="nvim $HOME/.config/zsh/.zshrc"
+    zsh-config="nvim $HOME/.config/zsh/.zshrc" \
+    zsh-refresh="source $HOME/.config/zsh/.zshrc"

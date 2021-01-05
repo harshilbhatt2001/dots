@@ -8,13 +8,21 @@ case "$(readlink -f /sbin/init)" in
 	*openrc*) reb="sudo -A openrc-shutdown -r"; shut="sudo -A openrc-shutdown -p" ;;
 esac
 
+#lock () {
+#    rm /tmp/screenshot.png
+#    scrot /tmp/screenshot.png
+#    convert /tmp/screenshot.png -blur 0x20 /tmp/screenshot.png
+#    convert /tmp/screenshot.png /home/harshil/.local/share/banner.png -gravity center -composite -matte /tmp/screenshot.png
+#    i3lock -i /tmp/screenshot.png
+#}
+
 cmds="\
-🔒 lock		slock
+🔒 lock		lock
+🖥 shutdown	${shut:-sudo -A shutdown -h now}
+🐻 hibernate	${hib:-sudo -A systemctl suspend-then-hibernate}
 🚪 leave dwm	kill -TERM $(pgrep -u $USER "\bdwm$")
 ♻ renew dwm	kill -HUP $(pgrep -u $USER "\bdwm$")
-🐻 hibernate	${hib:-sudo -A systemctl suspend-then-hibernate}
-🔃 reboot	${reb:-sudo -A reboot}
-🖥 shutdown	${shut:-sudo -A shutdown -h now}"
+🔃 reboot	${reb:-sudo -A reboot}"
 
 choice="$(echo "$cmds" | cut -d'	' -f 1 | dmenu)" || exit 1
 

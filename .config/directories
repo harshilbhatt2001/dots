@@ -11,3 +11,5 @@ pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
 sc  $HOME/.local/bin
 src $HOME/.local/src
 vv  ${XDG_VIDEOS_DIR:-$HOME/Videos}
+NS3 $HOME/workspace/ns-3-allinone/ns-3-dev
+ws  $HOME/workspace 

@@ -10,3 +10,6 @@ hash -d pp=/home/harshil/Pictures
 hash -d sc=/home/harshil/.local/bin 
 hash -d src=/home/harshil/.local/src 
 hash -d vv=/home/harshil/Videos 
+hash -d NS3=/home/harshil/workspace/ns-3-allinone/ns-3-dev
+hash -d ws=/home/harshil/workspace
+hash -d rp=/home/harshil/Documents/Research\ Papers
