@@ -19,7 +19,7 @@ esac
 cmds="\
 🔒 lock		lock
 🖥 shutdown	${shut:-sudo -A shutdown -h now}
-🐻 hibernate	${hib:-sudo -A systemctl suspend-then-hibernate}
+🐻 hibernate	${hib:systemctl hibernate}
 🚪 leave dwm	kill -TERM $(pgrep -u $USER "\bdwm$")
 ♻ renew dwm	kill -HUP $(pgrep -u $USER "\bdwm$")
 🔃 reboot	${reb:-sudo -A reboot}"

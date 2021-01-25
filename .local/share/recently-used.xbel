@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/harshil/Downloads/Cyberpunk-1080.zip" added="2021-01-10T15:44:34.445311Z" modified="2021-01-10T17:29:03.956548Z" visited="2021-01-10T15:44:34.445312Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-10T17:29:03.956545Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Downloads/calvin_and_hobbes.zip" added="2021-01-10T19:11:22.268027Z" modified="2021-01-10T19:11:22.268037Z" visited="2021-01-10T19:11:22.268029Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-10T19:11:22.268032Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Downloads/matlab_R2020b_glnxa64.zip" added="2021-01-11T10:41:25.476375Z" modified="2021-01-11T10:41:25.476380Z" visited="2021-01-11T10:41:25.476376Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-11T10:41:25.476377Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/A%20coreless%20hybrid%20magnetic%20coupling%20coil%20structure%20for%20dynamic%20wireless%20power%20charging%20system.pdf" added="2021-01-12T13:32:25.161929Z" modified="2021-01-12T14:07:43.981140Z" visited="2021-01-12T13:32:25.161929Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-12T14:07:43.981138Z" count="2"/>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-12T13:33:27.428919Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Wireless%20portable%20light-weight%20self-charging%20power%20packs%20by%20perovskite-organic%20tandem%20solar%20cells%20integrated%20with%20solid-state%20asymmetric%20supercapacitors.pdf" added="2021-01-12T16:09:32.738322Z" modified="2021-01-12T16:33:59.511206Z" visited="2021-01-12T16:09:32.738323Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-12T16:33:59.511201Z" count="2"/>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-12T16:10:30.886318Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/PSO-based%20Distributed%20Algorithm%20for%20Dynamic%20Task%20Allocation%20in%20a%20Robotic%20Swarm" added="2021-01-12T16:35:38.587291Z" modified="2021-01-12T16:35:59.823118Z" visited="2021-01-12T16:35:38.587292Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-12T16:35:38.587294Z" count="1"/>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-12T16:35:59.823113Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/The%20state-of-the-arts%20of%20wireless%20electric%20vehicle%20charging%20via%20magnetic%20resonance-%20principles,%20standards%20and%20core%20technologies.pdf" added="2021-01-12T16:35:44.829389Z" modified="2021-01-12T16:35:44.829400Z" visited="2021-01-12T16:35:44.829391Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-12T16:35:44.829394Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Selection%20of%20maximum%20power%20transfer%20region%20for%20resonant%20inductively%20coupled%20wireless%20charging%20system.pdf" added="2021-01-12T16:35:52.305291Z" modified="2021-01-12T16:36:08.043887Z" visited="2021-01-12T16:35:52.305292Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-12T16:35:52.305294Z" count="1"/>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-12T16:36:08.043885Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Exploiting%20peer-to-peer%20wireless%20energy%20sharing%20for%20mobile%20charging%20relief.pdf" added="2021-01-12T17:23:24.585907Z" modified="2021-01-12T17:23:50.796785Z" visited="2021-01-12T17:23:24.585908Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-12T17:23:50.796781Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Downloads/MPLABXProjects.zip" added="2021-01-13T11:52:35.379202Z" modified="2021-01-13T11:52:35.379210Z" visited="2021-01-13T11:52:35.379203Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-13T11:52:35.379205Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/PIC18F27-47-57Q43-Data-Sheet-DS40002147E.pdf" added="2021-01-13T14:29:08.113677Z" modified="2021-01-13T14:29:08.113689Z" visited="2021-01-13T14:29:08.113679Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-13T14:29:08.113683Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Textbooks/Fundamentals.of.Microelectronics_BehzadRazavi.pdf" added="2021-01-14T10:12:31.452031Z" modified="2021-01-19T18:39:51.330948Z" visited="2021-01-14T10:12:31.452031Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-14T10:12:31.452033Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2021-01-19T18:39:51.330944Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Textbooks/Engineering_Electromagnetics_Hayt_Buck_8.pdf" added="2021-01-14T11:57:39.038038Z" modified="2021-01-14T11:57:39.038047Z" visited="2021-01-14T11:57:39.038039Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-14T11:57:39.038042Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Downloads/popup_settings.theme.css" added="2021-01-14T12:07:20.713588Z" modified="2021-01-14T12:07:20.713594Z" visited="2021-01-14T12:07:20.713589Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-14T12:07:20.713591Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Downloads/FrostedGlass.theme.css" added="2021-01-14T12:14:49.444390Z" modified="2021-01-14T12:14:49.444399Z" visited="2021-01-14T12:14:49.444391Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-14T12:14:49.444394Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Downloads/MPLABX-v5.45-linux-installer.tar" added="2021-01-14T19:16:37.125266Z" modified="2021-01-14T19:16:37.125272Z" visited="2021-01-14T19:16:37.125267Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-14T19:16:37.125269Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Efficient%20Strategy%20for%20Collective%20Navigation%20Control%20in%20Swarm%20Robotics.pdf" added="2021-01-16T11:20:25.093849Z" modified="2021-01-17T12:01:51.023658Z" visited="2021-01-16T11:20:25.093850Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-16T11:20:25.093853Z" count="1"/>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-17T12:01:51.023655Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/harshil/New%20Volume/Downloads/pop-os_20.10_amd64_nvidia_6.iso" added="2021-01-16T12:03:29.207647Z" modified="2021-01-16T12:03:29.207658Z" visited="2021-01-16T12:03:29.207648Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-cd-image"/>
+        <bookmark:applications>
+          <bookmark:application name="virt-manager" exec="&apos;virt-manager %u&apos;" modified="2021-01-16T12:03:29.207652Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Download" added="2021-01-16T12:06:29.418150Z" modified="2021-01-16T12:06:29.418155Z" visited="2021-01-16T12:06:29.418151Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="virt-manager" exec="&apos;virt-manager %u&apos;" modified="2021-01-16T12:06:29.418152Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Downloads/pop-os_20.10_amd64_nvidia_6.iso" added="2021-01-16T12:07:03.591813Z" modified="2021-01-16T12:07:03.591822Z" visited="2021-01-16T12:07:03.591815Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-cd-image"/>
+        <bookmark:applications>
+          <bookmark:application name="virt-manager" exec="&apos;virt-manager %u&apos;" modified="2021-01-16T12:07:03.591817Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Research_Report_28_9-1-21.odt" added="2021-01-16T18:33:03.923401Z" modified="2021-01-16T18:34:13.361580Z" visited="2021-01-16T18:33:03.923402Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-16T18:33:03.923405Z" count="1"/>
+          <bookmark:application name="LibreOffice 7.0" exec="&apos;soffice %u&apos;" modified="2021-01-16T18:34:13.361577Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Research_Report_29_17-1-21" added="2021-01-16T18:34:13.031378Z" modified="2021-01-16T18:34:13.031387Z" visited="2021-01-16T18:34:13.031379Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.0" exec="&apos;soffice %u&apos;" modified="2021-01-16T18:34:13.031382Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Research_Report_29_17-1-21.odt" added="2021-01-16T18:34:13.980927Z" modified="2021-01-16T18:35:09.410132Z" visited="2021-01-16T18:34:13.980928Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.0" exec="&apos;soffice %u&apos;" modified="2021-01-16T18:35:09.410128Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Research_Report_29_16-1-21.odt" added="2021-01-16T18:35:09.044640Z" modified="2021-01-16T18:36:36.688868Z" visited="2021-01-16T18:35:09.044641Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.0" exec="&apos;soffice %u&apos;" modified="2021-01-16T18:36:36.688865Z" count="6"/>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-16T18:35:56.590592Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/MRM_Sunday_Reports/Research_Report_29_16-1-21.odt" added="2021-01-16T18:38:12.974718Z" modified="2021-01-16T18:38:12.974725Z" visited="2021-01-16T18:38:12.974719Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-16T18:38:12.974721Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Particle%20swarm%20optimization%20based%20energy%20efficient%20clustering%20and%20sink%20mobility%20in%20heterogeneous%20wireless%20sensor%20network.pdf" added="2021-01-17T12:00:23.053922Z" modified="2021-01-17T12:01:51.023636Z" visited="2021-01-17T12:00:23.053924Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-17T12:00:23.053927Z" count="1"/>
+          <bookmark:application name="teams-for-linux" exec="&apos;teams-for-linux %u&apos;" modified="2021-01-17T12:01:51.023630Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research%20Papers/Autonomous%20docking%20and%20energy%20sharing%20between%20two%20types%20of%20robotic%20agents.pdf" added="2021-01-17T13:19:21.293032Z" modified="2021-01-17T13:21:05.775938Z" visited="2021-01-17T13:19:21.293034Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-17T13:21:05.775935Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Research_Ele_taskphase2022.xlsx" added="2021-01-18T13:59:39.092608Z" modified="2021-01-18T13:59:39.092613Z" visited="2021-01-18T13:59:39.092609Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-18T13:59:39.092611Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/PIC18F47J53_Datasheet.pdf" added="2021-01-18T15:12:18.022880Z" modified="2021-01-18T15:12:18.022886Z" visited="2021-01-18T15:12:18.022881Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-18T15:12:18.022883Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Textbooks/Fundamentals.of.Logic.Design.pdf" added="2021-01-18T19:17:08.768919Z" modified="2021-01-18T19:17:08.768928Z" visited="2021-01-18T19:17:08.768920Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-18T19:17:08.768923Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Downloads/CLion-2020.3.1.tar.gz" added="2021-01-19T09:05:54.627740Z" modified="2021-01-19T09:05:54.627748Z" visited="2021-01-19T09:05:54.627741Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-19T09:05:54.627743Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Datasheets/Datasheet%20-%20STM32F303xB%20STM32F303xC%20-%20Arm%C2%AE-based%20Cortex%C2%AE-M4%2032b%20MCU+FPU,%20up%20to%20256KB%20Flash+%2048KB%20SRAM,%204%20ADCs,%202%20DAC%20ch.,%207%20comp,%204%20PGA,%20timers,%202.0-3.6%20V" added="2021-01-20T14:12:30.340027Z" modified="2021-01-20T14:12:30.340033Z" visited="2021-01-20T14:12:30.340028Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-20T14:12:30.340030Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Datasheets/M3%20Guide.pdf" added="2021-01-23T09:08:42.962587Z" modified="2021-01-23T09:08:42.962592Z" visited="2021-01-23T09:08:42.962588Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-23T09:08:42.962589Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/workspace/stm32f3_rust" added="2021-01-23T10:00:01.284087Z" modified="2021-01-23T10:00:01.284090Z" visited="2021-01-23T10:00:01.284087Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2021-01-23T10:00:01.284088Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/mrm/MRM_Sunday_Reports/Research_Report_30_23-1-21.odt" added="2021-01-23T16:56:19.639065Z" modified="2021-01-23T17:15:23.825801Z" visited="2021-01-23T16:56:19.639066Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.0" exec="&apos;soffice %u&apos;" modified="2021-01-23T17:11:12.847231Z" count="8"/>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-23T17:15:23.825797Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Textbooks/Signals.and.Systems-Haykin.pdf" added="2021-01-23T17:48:59.352682Z" modified="2021-01-23T17:48:59.352686Z" visited="2021-01-23T17:48:59.352683Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-23T17:48:59.352684Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/harshil/Documents/Textbooks/Principles.of.Linear.Systems.and.Sign%5BB.P._Lathi%5D.pdf" added="2021-01-23T17:54:23.007048Z" modified="2021-01-23T17:54:23.007057Z" visited="2021-01-23T17:54:23.007049Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-23T17:54:23.007052Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
