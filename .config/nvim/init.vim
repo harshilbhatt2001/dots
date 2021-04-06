@@ -19,7 +19,5 @@ source $HOME/.config/nvim/plug-config/goyo.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/themes/airline.vim
 
-
-
-
 nnoremap <C-s> :source $HOME/.config/nvim/init.vim<CR>
+colo gruvbox

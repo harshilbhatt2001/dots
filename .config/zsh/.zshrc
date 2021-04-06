@@ -75,10 +75,19 @@ bindkey '^[[P' delete-char
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+source /usr/share/gazebo/setup.sh
+# Load ros2 
+ros-start(){
+    docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --name roslocal -it ros:foxy /bin/bash
+}
+
+ros-connect(){
+    docker exec -it roslocal bash
+}
+
+ros-clean(){
+    docker rm roslocal
+}
+
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
-
-# Load ros1
-#source /opt/ros/melodic/setup.zsh
-# Load ros2 
-#source $HOME/.local/src/ros2_foxy/install/local_setup.zsh

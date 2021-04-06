@@ -3,6 +3,12 @@
 
 !! Set a default font and font size as below:
 *.font: monospace:size=10
+Xft.autohint: 1
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
 
 /* name		dark	light */
 /* black	0	8 */
@@ -133,7 +139,7 @@
 
 /* ! Dracula Xresources palette */
 *.foreground: #F8F8F2
-*.background: #282A36
+*.background: #282A36 
 *.color0:     #000000
 *.color8:     #4D4D4D
 *.color1:     #FF5555

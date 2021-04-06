@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/harshil/.local/src/gazebo_ros2_pkg/src'
+let g:netrw_dirhist_0='/home/harshil/.config/ncmpcpp'
+let g:netrw_dirhist_9='/home/harshil/workspace/rpi_os/src/cpu'
+let g:netrw_dirhist_8='/home/harshil/workspace/stm32f3_rust/rt/README.md'
+let g:netrw_dirhist_7='/home/harshil/workspace/stm32f3_rust/app'
+let g:netrw_dirhist_6='/home/harshil/workspace/tutorials/rust_cli/grrs/tests'
+let g:netrw_dirhist_5='/home/harshil/workspace/tutorials/rust_cli/grrs/test'
+let g:netrw_dirhist_4='/home/harshil/workspace/MPLABXProjects/Uart.X'
+let g:netrw_dirhist_3='/home/harshil/.config/zsh'
+let g:netrw_dirhist_2='/home/harshil/.config/ncmpcpp'

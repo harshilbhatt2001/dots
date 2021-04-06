@@ -10,9 +10,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Add some colour
     "Plug 'junegunn/rainbow_parentheses.vim'
     " Cool icons
-    "Plug 'ryanoasis/vim-devicons'
+    Plug 'ryanoasis/vim-devicons'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'vhda/verilog_systemverilog.vim'
     " status line
     Plug 'vim-airline/vim-airline'
     " FZF
@@ -27,6 +28,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Themes
     Plug 'morhetz/gruvbox'
     "Plug 'christianchiarulli/onedark.vim'
+    Plug 'dracula/vim'
+
     " Zen Mode
     Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'

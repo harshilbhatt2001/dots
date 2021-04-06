@@ -13,7 +13,8 @@ alias \
 	mkd="mkdir -pv" \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
-	ffmpeg="ffmpeg -hide_banner"
+	ffmpeg="ffmpeg -hide_banner" \
+    nnn="nnn -de" 
 
 # Colorize commands when possible.
 alias \
@@ -36,9 +37,13 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
+    btc="bluetoothctl" \
     tms="teams-for-linux" \
     matlab="matlab -nosplash -desktop" \
+    hibernate="systemctl hibernate" \
 	z="zathura" \
+    sr2="source /opt/ros2/foxy/setup.zsh && source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh" \
+    nr="prime-run" \
     spotify="LD_PRELOAD=/lib/spotify-adblock.so spotify"
 
 alias \

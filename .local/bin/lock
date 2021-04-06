@@ -41,3 +41,22 @@ i3lock --nofork                 	\
     --image=/home/harshil/.local/share/lockbg \
     --pass-power-keys 
 
+
+## For translucent lock screen
+# rm /tmp/screenshot.png
+# scrot /tmp/screenshot.png
+# convert /tmp/screenshot.png -blur 0x20 /tmp/screenshot.png
+# convert /tmp/screenshot.png /home/harshil/.local/share/banner.png -gravity center -composite -matte /tmp/screenshot.png
+# i3lock -i /tmp/screenshot.png \
+#    --indicator				\
+#    --bar-indicator			\
+#    --bar-position="1070"		\
+#    --bar-base-width="10"		\
+#    --bar-orientation=horizontal	\
+#    --bar-color=2e3440			\
+#    --ringvercolor=88c0d0		\
+#    --ringwrongcolor=bf616a		\
+#    --bshlcolor=5e81ac			\
+#    --keyhlcolor=a3be8c			\
+
+
