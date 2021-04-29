@@ -75,8 +75,13 @@ bindkey '^[[P' delete-char
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-source /usr/share/gazebo/setup.sh
 # Load ros2 
+ros-local(){
+    source /usr/share/gazebo/setup.sh
+    source /opt/ros2/foxy/setup.zsh
+    source $HOME/workspace/mrm/swarm/repos/underlay_ws/install/local_setup.zsh
+}
+
 ros-start(){
     docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --name roslocal -it ros:foxy /bin/bash
 }
