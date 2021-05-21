@@ -1,8 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
-# A dmenu binary prompt script.
-# Gives a dmenu prompt labeled with $1 to perform command $2.
-# For example:
-# `./prompt "Do you want to shutdown?" "shutdown -h now"`
+# Use as dmenu (by piping values separated by \n to it)
+# $1 is the text shown in the prompt (defaults as 'dmenu')
+# if $2 is '--run', runs dmenu_run instead
 
-[ "$(printf "No\\nYes" | dmenu -i -p "$1" -nb darkred -sb red -sf white -nf gray )" = "Yes" ] && $2
+fg=$(getxres foreground)
+bg=$(getxres background)
+[[ $1 == '' ]] && prompt='dmenu' || prompt=$1
+args="-fn scientifica-8 -b -h 25 -nb ${bg} -nf ${fg} -sb ${fg} -sf ${bg} -p ${prompt} -i"
+[[ $2 == '--run' ]] && dmenu_run $args || dmenu $args
+# rofi -dmenu -p "$1" -theme ~/.cache/colorer/rofi.rasi -i
