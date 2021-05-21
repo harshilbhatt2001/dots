@@ -1,0 +1,3 @@
+#!/bin/bash
+# Requires spotify-adblock-linux from aur
+LD_PRELOAD=/lib/spotify-adblock.so spotify

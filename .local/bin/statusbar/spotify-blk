@@ -1,0 +1,29 @@
+#!/bin/sh
+
+filter() {
+GLYPH=
+status=$(playerctl -p spotify status)
+artist=$(playerctl -p spotify metadata artist)
+album=$(playerctl -p spotify metadata album)
+title=$(playerctl -p spotify metadata title)
+length=$(playerctl -p spotify metadata mpris:length | sed 's/.\{6\}$//')
+if [[ "$status" == "Playing" ]] ; then 
+    echo "$GLYPH $artist/$title"
+else 
+    echo "$GLYPH"
+fi
+}
+
+case $BLOCK_BUTTON in
+    1) ;; #left-click
+    2) playerctl -p spotify play-pause | filter ;;
+    3) ;; # right click
+    4) playerctl -p spotify previous | filter ;; # scroll up, previous
+    5) playerctl -p spotify next | filter ;; # scroll down, next
+esac
+
+#if [ -n "$METADATA" ]; then
+#	echo "$GLYPH" "$METADATA"
+#else
+#	echo "$GLYPH" "..."
+#fi
