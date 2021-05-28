@@ -56,7 +56,7 @@ font-5=IPAGothic:size=11;2
 modules-left = launcher bspwm 
 ; Spotify (scripts at github.com/dietervanhoof/polybar-spotify-controls)
 modules-center = xwindow
-modules-right = time pulseaudio wlan 
+modules-right = time battery pulseaudio wlan eth power
 
 scroll-up = bspwn-wsnext
 scroll-down = bspwn-wsprev
@@ -91,8 +91,8 @@ font-4 = MaterialIcons:size=10;-1
 font-5 = terminus:size=8:antialias=false;-2
 font-6 = Material\-Design\-Iconic\-Font:style=Design-Iconic-Font:size=10
 
-modules-left = powermenu
-modules-center = mpd spotify
+modules-left = 
+modules-center = mpd 
 modules-right = temperature cpu memory
 
 ;                      _       _           
@@ -149,11 +149,59 @@ label-urgent-font = 2
 ;ws-icon-9 = 10;
 ;ws-icon-default = 
 
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+#mount-1 = /home
+
+label-mounted-underline = ${colors.cyan}
+label-mounted = /: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.gray}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 98
+
+;format-charging = Charging... <label-charging>
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = ${colors.darkyellow}
+
+;format-discharging = <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.gray}
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.gray}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.gray}
+animation-charging-framerate = 500
+
+scroll-up = light -A 2
+scroll-down = light -U 2
+
 [module/power]
 type = custom/text
 content = 
 content-foreground = ${colors.foreground}
-click-left = ~/.local/bin/powermenu
+click-left = ~/.config/rofi/bin/menu_powermenu
 ;The script above is to be found here : https://github.com/ngynLk/scripts
 content-padding = 2
 
