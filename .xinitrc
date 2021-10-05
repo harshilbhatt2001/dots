@@ -18,10 +18,14 @@
 # Comment/uncomment these lines depending on what wm you want to use. Also
 # check the i3blocks line above.
 #feh --bg-scale ~/Pictures/Wallpapers/spiderverse1.jpg &
-dwmblocks &
+#dwmblocks &
 redshift &
+easyeffects --gapplication-service &
 #locker &
 udiskie -2 -s &
 thunar --daemon &
-ssh-agent dwm
+#ssh-agent dwm
+bspwm
 # ssh-agent i3
+#export DESKTOP_SESSION=plasma
+#exec startplasma-x11

@@ -7,10 +7,12 @@
 
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
+# Adds `~/.config/rofi/bin` ro $PATH
+export PATH="$PATH:$(du "$HOME/.config/rofi/bin" | cut -f2 | paste -sd ':')"
 
 # Default programs:
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="kitty"
 export BROWSER="brave"
 export READER="zathura"
 
@@ -142,5 +144,10 @@ Please run:
 and replace \`libxft\`"
 fi
 
+$HOME/.local/scripts/spotify/launchlistener.sh &
+
 # Switch escape and caps if tty and no passwd required:
 sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
+
+# Run GUI for docker application
+xhost +"local:docker@"
