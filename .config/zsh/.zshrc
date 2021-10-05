@@ -18,8 +18,12 @@ HISTFILE=~/.cache/zsh/history
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
+eval "`pip completion --zsh`"
+compctl -K _pip_completion pip3
 compinit
 _comp_options+=(globdots)		# Include hidden files.
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
 
 # vi mode
 bindkey -v
@@ -77,13 +81,15 @@ bindkey '^e' edit-command-line
 
 # Load ros2 
 ros-local(){
-    source /usr/share/gazebo/setup.sh
+    if command -v gazebo > /dev/null; then
+        source /usr/share/gazebo/setup.sh
+    fi
     source /opt/ros2/foxy/setup.zsh
-    source $HOME/workspace/mrm/swarm/repos/underlay_ws/install/local_setup.zsh
+    source $HOME/workspace/mrm/repos/underlay_ws/install/setup.zsh
 }
 
 ros-start(){
-    docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --name roslocal -it ros:foxy /bin/bash
+    docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="$HOME/workspace/mrm:/workspace" --name roslocal -dt athackst/ros2:foxy-gazebo /bin/bash
 }
 
 ros-connect(){
@@ -94,5 +100,9 @@ ros-clean(){
     docker rm roslocal
 }
 
+[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
+
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+export GAZEBO_MODEL_PATH=~/.local/share/gazebo_models:${GAZEBO_MODEL_PATH}
+eval $(thefuck --alias)

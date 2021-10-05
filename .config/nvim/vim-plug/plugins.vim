@@ -35,7 +35,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/limelight.vim'
     " File Manager
     "Plug 'scrooloose/nerdtree'
-    
+    " Markdown
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+    " Latex
+    Plug 'lervag/vimtex'
 
 call plug#end()
 

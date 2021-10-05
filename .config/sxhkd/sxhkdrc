@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-    kitty
+    $TERMINAL
 
 # terminal dropdown
 super + shift + Return
@@ -12,7 +12,7 @@ super + shift + Return
 
 # program launcher
 super + d
-	dmenu_run
+	~/.config/rofi/launchers/misc/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -22,21 +22,41 @@ super + Escape
 super + slash
     sxhkd-help
 
-# launch browser
+# launch default browser
 super + w
-    brave
+    $BROWSER
 
-super + backspace
-    sysact
+# Launch firefox
+super + control + w
+    firefox
+
+# Launch nmtui
+super + shift + w
+    $TERMINAL -e nmtui
+
+super + BackSpace
+    $HOME/.config/rofi/bin/menu_powermenu
 
 # Launch spotify
 super + s 
-    bspwm-toggle-visibility Spotify spotify-adblock
+    bspwm-toggle-visibility Spotify spotify
 
 # Launch lightcord
 super + shift + z
-    bspwm-toggle-visibility Discord lightcord
+    bspwm-toggle-visibility LightCord lightcord
+    #tdrop -ma -n discord --class=discord flatpak run com.discordapp.Discord
     
+# Launch ncmpcpp
+super + m
+    $TERMINAL -e ncmpcpp
+
+# Launch vscode
+super + shift + e
+    code
+
+# Launch mutt
+super + e
+    $TERMINAL -e mutt
 
 # Show clipmenu
 super + v
@@ -48,13 +68,13 @@ super + v
         -theme-str 'listview \{ spacing: 0; \}' \
         -theme-str 'window \{ width: 20em; \}'
 
-#
-# bspwm hotkeys
-#
+# Open pulsemixer
+super + F4
+    $TERMINAL -e pulsemixer
 
-# quit current program
-super + q
-   bspc node -c 
+# Launch Front Camera
+super + F11
+    mpv --no-cache --no-osc --no-input-default-bindings --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)
 
 # play-pause spotify
 super + p
@@ -66,6 +86,24 @@ super + comma
 super + period 
     playerctl -p spotify next
 
+# play-pause mpc
+super + shift + p
+    mpc toggle
+# mpc previous
+super + shift + comma
+    mpc repeat
+# mpc next
+super + shift + period 
+    mpc next
+
+#
+# bspwm hotkeys
+#
+
+# quit current program
+super + q
+   bspc node -c 
+
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
@@ -75,7 +113,7 @@ super + {_,shift + }w
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
-super + m
+super + u
 	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
@@ -118,9 +156,13 @@ super + {_,shift + }c
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
-# focus the last node/desktop
-super + {grave,backslash}
-	bspc {node,desktop} -f last
+# focus the last desktop
+super + backslash
+	bspc desktop -f last
+#
+# focus the last node 
+super + shift + backslash
+	bspc node -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}

@@ -3,6 +3,7 @@
 
 !! Set a default font and font size as below:
 *.font: monospace:size=10
+rofi.font: NotoSansMono-Regular 10
 Xft.autohint: 1
 Xft.antialias: 1
 Xft.hinting: true

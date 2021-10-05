@@ -52,11 +52,12 @@ font-3=Font Awesome 5 Brands:size=10;2
 font-4=font\-logos:size=10;2
 font-5=IPAGothic:size=11;2
 
+module-margin = 0.2
 ; Other modules: mpd previous playpause next spotify
-modules-left = launcher bspwm 
+modules-left = bspwm 
 ; Spotify (scripts at github.com/dietervanhoof/polybar-spotify-controls)
 modules-center = xwindow
-modules-right = time battery pulseaudio wlan eth power
+modules-right = battery pulseaudio wlan eth popup-calendar
 
 scroll-up = bspwn-wsnext
 scroll-down = bspwn-wsprev
@@ -66,6 +67,7 @@ override-redirect = false
 
 
 [bar/bottom]
+enable-ipc=true
 #monitor = eDP-1
 bottom = true
 width = 100%
@@ -93,7 +95,10 @@ font-6 = Material\-Design\-Iconic\-Font:style=Design-Iconic-Font:size=10
 
 modules-left = 
 modules-center = mpd 
-modules-right = temperature cpu memory
+modules-right = temperature updates-pacman-aurhelper cpu memory
+
+wm-restack = bspwm
+override-redirect = false
 
 ;                      _       _           
 ;  _ __ ___   ___   __| |_   _| | ___  ___ 
@@ -149,6 +154,12 @@ label-urgent-font = 2
 ;ws-icon-9 = 10;
 ;ws-icon-default = 
 
+[module/redshift]
+type = custom/text
+content = 
+click-left = redshift -O 4300
+click-right = redshift -x
+
 [module/filesystem]
 type = internal/fs
 interval = 25
@@ -196,6 +207,39 @@ animation-charging-framerate = 500
 
 scroll-up = light -A 2
 scroll-down = light -U 2
+
+[module/battery_alt]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 95
+
+format-charging = <animation-charging>
+
+format-discharging = <ramp-capacity>
+
+format-full = <ramp-capacity>
+
+ramp-capacity-0 = "%{T2}%{T-}"
+ramp-capacity-1 = "%{T2}%{T-}"
+ramp-capacity-2 = "%{T2}%{T-}"
+ramp-capacity-3 = "%{T2}%{T-}"
+ramp-capacity-4 = "%{T2}%{T-}"
+ramp-capacity-5 = "%{T2}%{T-}"
+ramp-capacity-6 = "%{T2}%{T-}"
+ramp-capacity-7 = "%{T2}%{T-}"
+ramp-capacity-8 = "%{T2}%{T-}"
+
+animation-charging-0 = "%{T2}%{T-}"
+animation-charging-1 = "%{T2}%{T-}"
+animation-charging-2 = "%{T2}%{T-}"
+animation-charging-3 = "%{T2}%{T-}"
+animation-charging-4 = "%{T2}%{T-}"
+animation-charging-5 = "%{T2}%{T-}"
+animation-charging-6 = "%{T2}%{T-}"
+animation-charging-7 = "%{T2}%{T-}"
+
+animation-charging-framerate = 250
 
 [module/power]
 type = custom/text
@@ -285,8 +329,15 @@ ramp-coreload-7-foreground = #ff5555
 
 [module/date]
 type = internal/date
-date =    %%{F#99}%Y-%m-%d%%{F-}  %%{F#fff}%H:%M%%{F-}
-date-alt = %%{F#fff}%A, %d %B %Y  %%{F#fff}%H:%M%%{F#666}:%%{F#fba922}%S%%{F-}
+#date =    %%{F#99}%Y-%m-%d%%{F-}  %%{F#fff}%H:%M%%{F-}
+#date-alt = %%{F#fff}%A, %d %B %Y  %%{F#fff}%H:%M%%{F#666}:%%{F#fba922}%S%%{F-}
+date =   %a %b %d  %H:%M %p 
+
+[module/popup-calendar]
+type = custom/script
+exec = ~/.local/bin/polybar-scripts/popup-calendar.sh
+interval = 5
+click-left = ~/.local/bin/polybar-scripts/popup-calendar.sh --popup &
 
 [module/memory]
 type = internal/memory
@@ -347,9 +398,9 @@ type = internal/network
 interface = wlp4s0
 interval = 3.0
 
-format-connected =  <label-connected>
-label-connected = %essid%
-label-connected-color1 = ${colors.foreground}
+format-connected =  <label-connected> 
+label-connected = %essid% 
+label-connected-color1 = ${colors.foreground} 
 
 ;format-disconnected =
 format-disconnected = <label-disconnected>
@@ -362,6 +413,12 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-color1 = ${colors.foreground}
+
+[module/network]
+type = internal/network
+interface = wlp4s0
+label-disconnected = " Not connected" 
+label-connected = ""
 
 [module/eth]
 type = internal/network
@@ -391,6 +448,15 @@ label-foreground = ${colors.foreground}
 label-background = ${colors.background}
 label-padding = 2
 
+[module/volume]
+type= internal/pulseaudio
+format-volume = <ramp-volume><label-volume>
+
+label-muted = "%{T2}%{T-}"
+
+ramp-volume-0 = "%{T2} %{T-}"
+ramp-volume-1 = "%{T2} %{T-}"
+ramp-volume-2 = "%{T2} %{T-}"
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -429,6 +495,12 @@ label-warn-color1 = ${colors.secondary}
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
+
+[module/updates-pacman-aurhelper]
+type = custom/script
+exec = ~/.local/bin/polybar-scripts/updates-pacman-aurhelper.sh
+interval = 600
+
 
 [module/powermenu]
 type = custom/menu

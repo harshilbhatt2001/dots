@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Use neovim for vim if present.
-[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+#[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
@@ -14,6 +14,8 @@ alias \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
+    ls="exa" \
+    du="dust" \
     nnn="nnn -de" 
 
 # Colorize commands when possible.
@@ -41,10 +43,11 @@ alias \
     tms="teams-for-linux" \
     matlab="matlab -nosplash -desktop" \
     hibernate="systemctl hibernate" \
-	z="zathura" \
+	za="zathura" \
     sr2="source /opt/ros2/foxy/setup.zsh && source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh" \
     nr="prime-run" \
-    spotify="LD_PRELOAD=/lib/spotify-adblock.so spotify"
+    # Requires spotify-adblock from aur
+    spotify="LD_PRELOAD=/lib/spotify-adblock.so spotify" 
 
 alias \
 	magit="nvim -c MagitOnly" \

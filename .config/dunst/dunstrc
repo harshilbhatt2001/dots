@@ -4,12 +4,12 @@
     geometry = "320x5-30+20"
     indicate_hidden = yes
     shrink = no
-    transparency = 20
+    transparency = 50
     notification_height = 0
     separator_height = 2
     padding = 8
     horizontal_padding = 8
-    frame_width = 3
+    frame_width = 0
     frame_color = "#aaaaaa"
 
     # Define a color for the separator.
@@ -69,27 +69,33 @@
 [shortcuts]
     close = ctrl+space
     close_all = ctrl+shift+space
-    history = ctrl+grave
+    history = mod4+grave
     context = ctrl+shift+period
     set_paused toggle = ctrl+shift+p
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282828"
-    foreground = "#928374"
+    #background = "#282828"
+    #foreground = "#928374"
+    background = "#051014"
+    foreground = "#ffecd1"
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#458588"
-    foreground = "#ebdbb2"
+    #background = "#458588"
+    #foreground = "#ebdbb8"
+    background = "#028080"
+    foreground = "#F1FAEE"
     timeout = 5
 
 [urgency_critical]
+    #background = "#cc2421"
+    #foreground = "#ebdbb2"
     background = "#cc2421"
-    foreground = "#ebdbb2"
+    foreground = "#fffd82"
     frame_color = "#fabd2f"
     timeout = 0
 
