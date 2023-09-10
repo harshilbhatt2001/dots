@@ -1,1 +1,3 @@
-..config/nvim/autoload/plugged
+.config/tmux/plugins
+.config/nvim/autoload/plugged
+.config/nvim/after/plugin/calendar.lua
